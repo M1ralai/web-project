@@ -1,0 +1,217 @@
+.proza-libre-bold {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+:root{
+    --bg-color: #E8F7EE;
+    --dark-bg-color: #4C6663;
+
+    --text-color: #111C2C;
+    --dark-text-color: #E8F7EE;
+
+    --selection-bg-color:  #B8C4BB;
+    --dark-selection-bg-color:  #111C2C;
+    
+    --hover-bg: #4C6663;
+    --dark-hover-bg: #E8F7EE;
+    
+    --paragraph-color: #465D5A;
+    --dark-paragraph-color: #E8F7EE;
+}
+
+
+:root:has(.theme:checked){
+    --text-color: var(--dark-text-color);
+    --bg-color: var(--dark-bg-color);
+    --selection-bg-color: var(--dark-selection-bg-color);
+    --hover-bg: var(--dark-hover-bg);
+    --paragraph-color: var(--dark-paragraph-color);
+}
+body:has(.theme:checked) .light{
+    opacity: 1;
+}
+body:has(.theme:checked) .dark{
+    opacity: 0;
+}
+
+.light{
+    transition: all 2s;
+    opacity: 0;
+}
+
+.dark{
+    transition: all 2s;
+    opacity: 1;
+}
+
+.theme{ 
+    -webkit-appearance: none;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--hover-color);
+    border-radius: 15px;
+    background-color: none;
+    transition: all 2s;
+}
+.theme::before{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    background-color: var(--hover-bg);
+    transition: all 2s;
+}
+.theme:hover{
+    cursor: pointer;
+}
+.themeContainer svg{
+    position: absolute;
+    right: 18vw;
+    translate: 164% 24%;
+}
+.themeContainer svg:hover{
+    cursor: pointer;
+}
+
+
+
+header{
+    transition: all 2s;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+}
+p{
+    transition: all 2s;
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+body{
+    background-color: var(--bg-color);
+    width: 80%;
+    padding-left: 10%;
+    transition: all 2s;
+}
+h1{
+    text-align: center;
+    color: var(--text-color);
+    font-family: Proza Libre;
+    transition: all 2s;
+}
+h3{
+    text-align: center;
+    color: var(--text-color);
+    font-family: Proza Libre;
+}
+main{
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--selection-bg-color);
+    height: 80%;
+    display: block;
+}
+footer{
+    display: block;
+    height: 200px;
+}
+.top-buttons{
+    font-size: 2.5vw;
+}
+.top-bar{
+    text-align: center;
+    list-style: none;
+}
+.top-bar a{
+    transition: 1.5s;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-bottom: solid;
+    border-color: var(--bg-color);
+    color: var(--text-color);
+}
+.top-bar a:hover{
+    transition: 1.5s;
+    border-color: var(--selection-bg-color);
+}
+.image-write{
+    width: 100%;
+    transition: 1s;
+    display: grid;
+    align-items: center; 
+    grid-template-columns:  40% 50%;
+    column-gap: 10%;
+}
+article img{
+    width: 100%;
+}
+.paragraph{
+    color: var(--paragraph-color);
+    font-size: min(3vw,28px);
+}
+.paragraph a{
+    transition: 1.5s;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: min(1vw,14px);
+    padding-bottom: min(1vw,14px);
+    border-radius: 3vw;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--selection-bg-color);
+}
+.paragraph a:hover{
+    transition: 1.5s;
+    background-color: var(--hover-bg);
+    color:  var(--selection-bg-color);
+}
+.four-look div{
+    display: block;
+    height: 100%;
+}
+.four-look{
+    overflow:hidden;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.four-look > div{
+    max-height: 25pc;
+    min-height: 25pc;
+}
+.two-look{
+    overflow:hidden;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.two-look > div{
+    overflow: hidden;
+    max-height: 25pc;
+    min-height: 25pc;
+    align-content: center;
+}
+.text{
+    color: var(--paragraph-color);
+    font-size: 2vh;
+}
