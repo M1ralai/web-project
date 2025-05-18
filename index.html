@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+        <h1>Atahan Demirer</h1>
+    </header>
+
+    <nav class="navbar  navbar-expand-lg mt-3">
+        <div class="container">
+            <ul class="nav  justify-content-center" id="nav">
+                <script>
+                    fetch("php/merhaba.php").then(res => res.text()).then(data => {
+                        document.getElementById("nav").innerHTML = data;
+                    });
+                </script>
+                <li class="nav-item">
+                    <a class="nav-link" href="ilgialanlari.html">İlgi Alanları</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehrim.html">Şehrim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletisim.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <article>
+            <p class="paragraph">Hayata gözlerimi Hakkari'de açtım, polis memuru bir anne ve asker bir babanın ikinci oğlu olarak dünyaya geldim. Tüm asker çocukları gibi hayatımı türlü türlü şehirlerde iki üç yıl kalarak geçirdim bu sırada pek çok kültür ve insan tanıma fırsatı buldum. <br><br></p>
+        </article>
+        <div class="container-fluid row-container">
+            <article class="row align-items-center mb-4">
+                <div class="col">
+                    <p class="paragraph">
+                        Ortaokul hayatımı en uzun süre yaşadığım yer olan Sungurluda geçirdim. Burada arkadaşlık ve dostluk kavramı hakkında pek çok düşüncemi geliştiren olaylar oldu. Bu süreçte müziğe tutundum ve büyük bir tutkuyla türkçe rock ve fransız müziğine merak saldım.<br><br>
+                        <a href="ilgialanlari.html#Playlistlerim" class="btn btn-primary">Playlistlerim</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="image/pomplamoose.jpeg" alt="Pomplamoose">
+                </div>
+            </article>
+        </div>
+
+        <article class="row align-items-center mb-4">
+            <div class="col">
+                <p class="paragraph">
+                                        Günümüzde hala filmler çıkarmakta olan Zeki Demirkubuz'un bir hayranı olmamdan başlayan bir süreçle sanat filmlerini tüketmeye ve amatör senaryolar yazmaktayım.<br><br>
+                    <a href="ilgialanlari.html#yazilarim" class="btn btn-primary">Yazılarım</a>
+                </p>
+            </div>
+            <div class="col">
+                <img src="image/5425581.webp" alt="Zeki Demirkubuz">
+            </div>
+        </article>
+    </main>
+
+    <footer class="text-light py-4">
+        <div class="container">
+            <p class="mb-1">Made by Atahan Demirer with love</p>
+            <p class="text-end mb-0">Gerçeği ararken, gerçeği keşfedeceğime, onun değiştiğini görüyorum.<br><em>Andrei Tarkovsky</em></p>
+        </div>
+    </footer>
+</body>
+</html>
