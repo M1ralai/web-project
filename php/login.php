@@ -11,7 +11,6 @@
             list($storedUserName,$storedPassword) = explode('&', $line);
             if ($storedUserName === $username && $storedPassword === $password) {
                 $_SESSION['username'] = $username;
-                $_SESSION['fullname'] = $storedName;
                 $found = true;
                 break;
             }

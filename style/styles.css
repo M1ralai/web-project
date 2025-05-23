@@ -69,7 +69,7 @@ header h1 {
 .btn{
     border-radius: 100pc !important;
     transition: all, 2s !important;
-}
+    font-size: 2vw !important;}
 .btn:hover{
     background-color: #E8F7EE !important;
     color: #111C2C !important;
