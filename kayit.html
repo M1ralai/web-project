@@ -51,36 +51,21 @@
         </div>
     </nav>
 
-    <main class="container my-4">
-        <article>
-            <p class="paragraph">Hayata gözlerimi Hakkari'de açtım, polis memuru bir anne ve asker bir babanın ikinci oğlu olarak dünyaya geldim. Tüm asker çocukları gibi hayatımı türlü türlü şehirlerde iki üç yıl kalarak geçirdim bu sırada pek çok kültür ve insan tanıma fırsatı buldum. <br><br></p>
-        </article>
-        <div class="container-fluid row-container">
-            <article class="row align-items-center mb-4">
-                <div class="col">
-                    <p class="paragraph">
-                        Ortaokul hayatımı en uzun süre yaşadığım yer olan Sungurluda geçirdim. Burada arkadaşlık ve dostluk kavramı hakkında pek çok düşüncemi geliştiren olaylar oldu. Bu süreçte müziğe tutundum ve büyük bir tutkuyla türkçe rock ve fransız müziğine merak saldım.<br><br>
-                        <a href="ilgialanlari.html#Playlistlerim" class="btn btn-primary">Playlistlerim</a>
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="image/pomplamoose.jpeg" alt="Pomplamoose">
-                </div>
-            </article>
+    <form action="php/register.php" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">E-posta</label>
+          <input type="email" class="form-control" name="email" id="email" required>
         </div>
-
-        <article class="row align-items-center mb-4">
-            <div class="col">
-                <p class="paragraph">
-                                        Günümüzde hala filmler çıkarmakta olan Zeki Demirkubuz'un bir hayranı olmamdan başlayan bir süreçle sanat filmlerini tüketmeye ve amatör senaryolar yazmaktayım.<br><br>
-                    <a href="ilgialanlari.html#yazilarim" class="btn btn-primary">Yazılarım</a>
-                </p>
-            </div>
-            <div class="col">
-                <img src="image/5425581.webp" alt="Zeki Demirkubuz">
-            </div>
-        </article>
-    </main>
+        <div class="mb-3">
+          <label for="username" class="form-label">Kullanıcı Adı</label>
+          <input type="text" class="form-control" name="username" id="username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Şifre</label>
+          <input type="password" class="form-control" name="password" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Kayıt Ol</button>
+      </form>
 
     <footer class="text-light py-4">
         <div class="container">

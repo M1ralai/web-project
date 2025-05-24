@@ -34,13 +34,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="iletisim.html">İletişim</a>
                 </li>
-                <li class="log">
+                <li id="log" class="nav-item"></li>
                     <script>
-                        fetch("php/gircık.php").then(res => res.text()).then(data => {
+                        fetch("php/gircik.php").then(res => res.text()).then(data => {
                             document.getElementById("log").innerHTML = data;
                         });
                     </script>
-                </li>
             </ul>
                 </div>
             </nav> 

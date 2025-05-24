@@ -4,8 +4,6 @@
 
     $file = '../kullanicilar/kullanicilar';
     $found = false;
-
-    if (file_exists($file)) {
         $lines = file($file, FILE_IGNORE_NEW_LINES);
         foreach ($lines as $line) {
             list($storedUserName,$storedPassword) = explode('&', $line);
@@ -15,7 +13,6 @@
                 break;
             }
         }
-    }
 
     if ($found) {
         header('Location: index.html');

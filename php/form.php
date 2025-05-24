@@ -1,4 +1,4 @@
-<?php 
+<?php if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $isimsoyisim = htmlspecialchars(trim($_POST['isimsoyisim'] ?? ''));
     $email = htmlspecialchars(trim($_POST['email'] ?? ''));
     $baslik = htmlspecialchars(trim($_POST['baslik'] ?? ''));
@@ -9,4 +9,5 @@
     echo "<p class="paragraph">Mesaj: $mesaj</p>";
     echo "<p class="paragraph"> $mesaj</p>";
     echo "<a href="index.html">geri dön</a>";
+}
 ?>
