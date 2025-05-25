@@ -35,7 +35,7 @@ img{
     border-width: 1px;
 }
 .nav-item a{
-    font-size: min(4vw,30px) !important;
+    font-size: min(2vw,30px) !important;
     color: #E8F7EE !important;
 }
 .navbar{
@@ -59,9 +59,6 @@ header h1 {
     text-align: center;
     margin-top: 1rem;
 }
-.navbar{
-    background-color: #000 !important;
-}
 .paragraph a{
     border: none;
     background-color: #111C2C !important;
@@ -78,11 +75,11 @@ header h1 {
 .row-container{
     height: 10%;
 }
-.navbar{
-    background-color: #4C6663 !important;
-    align-items: center !important;
-}
 .row{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+footer div p{
+    font-size: 1.5vw;
 }
