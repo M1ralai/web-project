@@ -48,7 +48,7 @@ img{
 }
 .paragraph {
     color: #E8F7EE !important;
-    font-size: 1.75vw !important;
+    font-size: max(2vw, 10px) !important;
     margin-bottom: 1rem;
 }
 .image-write img {
@@ -66,7 +66,8 @@ header h1 {
 .btn{
     border-radius: 100pc !important;
     transition: all, 2s !important;
-    font-size: 2vw !important;}
+    font-size: 2vw !important;
+}
 .btn:hover{
     background-color: #E8F7EE !important;
     color: #111C2C !important;
@@ -79,7 +80,6 @@ header h1 {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
 footer div p{
     font-size: 1.5vw;
 }
