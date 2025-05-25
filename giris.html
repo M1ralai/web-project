@@ -15,7 +15,7 @@
         <nav class="navbar  navbar-expand-lg mt-5">
             <div class="container">
                <ul class="nav  justify-content-center" id="nav">
-                <li id="merhaba"></li>
+                <li class="nav-item" id="merhaba"></li>
                 <script>
                     fetch("php/merhaba.php").then(res => res.text()).then(data => {
                         document.getElementById("merhaba").innerHTML = data;
@@ -55,7 +55,7 @@
             <button type="submit" class="btn btn-success w-100">Giriş Yap</button>
         </form>
 
-        <p class="paragraph">Hesabınız yok mu? <a href="kayit.html">hemen kayıt olun.</a></p>
+        <p class="paragraph">Hesabınız yoksa <a class="paragraph" href="kayit.html">hemen kayıt olun.</a></p>
 
 
         <footer class="text-light py-4">
